@@ -6,7 +6,6 @@ maven installed on system
 
 Steps to run:
 1. Goto project directory.
-
 2. mvn clean integration-test
 
 Help URL:

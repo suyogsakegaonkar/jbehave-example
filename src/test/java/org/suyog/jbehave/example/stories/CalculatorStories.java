@@ -8,7 +8,7 @@ import org.jbehave.core.junit.JUnitStory;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
-import org.suyog.jbehave.example.steps.AddTwoNumbersSteps;  
+import org.suyog.jbehave.example.steps.DivideTwoNumbersSteps;  
 
  public class CalculatorStories extends JUnitStory {  
 
@@ -24,7 +24,7 @@ import org.suyog.jbehave.example.steps.AddTwoNumbersSteps;
    // Here we specify the steps classes  
    @Override  
    public InjectableStepsFactory stepsFactory() {  
-     return new InstanceStepsFactory(configuration(), new AddTwoNumbersSteps());  
+     return new InstanceStepsFactory(configuration(), new DivideTwoNumbersSteps());  
    }  
 
  }  

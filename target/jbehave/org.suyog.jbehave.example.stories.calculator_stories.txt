@@ -7,28 +7,40 @@ I want to use a calculator to add two numbers
 Scenario: Add two valid numbers
 Examples:
 Given a calculator
-When I add <number1> and <number2>
-Then the outcome should <result>
+When I divide <number1> by <number2>
+Then the outcome should be <result>
 
 |number1|number2|result|
-|10|10|20|
-|10|30|40|
-|10|15|25|
+|10|10|1.0|
+|10|2|5.0|
+|10|20|0.5|
+|0|0|undefined|
+|5|0|undefined|
 
-Example: {number1=10, number2=10, result=20}
+Example: {number1=10, number2=10, result=1.0}
 Given a calculator
-When I add 10 and 10
-Then the outcome should 20
+When I divide 10 by 10
+Then the outcome should be 1.0
 
-Example: {number1=10, number2=30, result=40}
+Example: {number1=10, number2=2, result=5.0}
 Given a calculator
-When I add 10 and 30
-Then the outcome should 40
+When I divide 10 by 2
+Then the outcome should be 5.0
 
-Example: {number1=10, number2=15, result=25}
+Example: {number1=10, number2=20, result=0.5}
 Given a calculator
-When I add 10 and 15
-Then the outcome should 25
+When I divide 10 by 20
+Then the outcome should be 0.5
+
+Example: {number1=0, number2=0, result=undefined}
+Given a calculator
+When I divide 0 by 0
+Then the outcome should be undefined
+
+Example: {number1=5, number2=0, result=undefined}
+Given a calculator
+When I divide 5 by 0
+Then the outcome should be undefined
 
 
 

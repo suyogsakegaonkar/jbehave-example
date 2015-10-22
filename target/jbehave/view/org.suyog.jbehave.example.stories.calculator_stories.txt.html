@@ -26,6 +26,10 @@ Then the outcome should be <result>
 |10|20|0.5|
 |0|0|undefined|
 |5|0|undefined|
+|-5|2|-2.5|
+|5|-2|-2.5|
+|-5|-2|2.5|
+|0|2|0.0|
 
 Example: {number1=10, number2=10, result=1.0}
 Given a calculator
@@ -51,6 +55,26 @@ Example: {number1=5, number2=0, result=undefined}
 Given a calculator
 When I divide 5 by 0
 Then the outcome should be undefined
+
+Example: {number1=-5, number2=2, result=-2.5}
+Given a calculator
+When I divide -5 by 2
+Then the outcome should be -2.5
+
+Example: {number1=5, number2=-2, result=-2.5}
+Given a calculator
+When I divide 5 by -2
+Then the outcome should be -2.5
+
+Example: {number1=-5, number2=-2, result=2.5}
+Given a calculator
+When I divide -5 by -2
+Then the outcome should be 2.5
+
+Example: {number1=0, number2=2, result=0.0}
+Given a calculator
+When I divide 0 by 2
+Then the outcome should be 0.0
 
 
 

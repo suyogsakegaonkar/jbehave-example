@@ -1,8 +1,8 @@
 #org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Thu Oct 22 03:49:08 IST 2015
-duration=109
+#Thu Oct 22 10:21:35 IST 2015
+duration=129
 notAllowed=0
-examples=5
+examples=9
 scenariosNotAllowed=0
 pending=0
 stepsPending=0
@@ -13,8 +13,8 @@ givenStoryScenariosFailed=0
 stepsFailed=0
 scenarios=1
 givenStories=0
-stepsSuccessful=15
-steps=15
+stepsSuccessful=27
+steps=27
 givenStoryScenariosPending=0
 scenariosPending=0
 stepsIgnorable=0

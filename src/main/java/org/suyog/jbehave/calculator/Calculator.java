@@ -1,4 +1,4 @@
-package org.suyog.jbehave.example;
+package org.suyog.jbehave.calculator;
 
 public class Calculator {
 

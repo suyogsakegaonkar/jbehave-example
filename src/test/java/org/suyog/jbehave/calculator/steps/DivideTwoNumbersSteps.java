@@ -1,11 +1,11 @@
- package org.suyog.jbehave.example.steps;  
+ package org.suyog.jbehave.calculator.steps;  
 
  import org.jbehave.core.annotations.Given;  
  import org.jbehave.core.annotations.Named;  
  import org.jbehave.core.annotations.Then;  
  import org.jbehave.core.annotations.When;
 import org.junit.Assert;
-import org.suyog.jbehave.example.Calculator;  
+import org.suyog.jbehave.calculator.Calculator;  
 
  public class DivideTwoNumbersSteps {  
 
